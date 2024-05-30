@@ -1,0 +1,101 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+body {
+  background: rgb(25, 0, 36);
+  background: linear-gradient(
+    310deg,
+    rgba(25, 0, 36, 1) 0%,
+    rgba(93, 9, 121, 1) 36%,
+    rgba(255, 0, 48, 1) 99%
+  );
+}
+
+.main-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.divided-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+  width: 80%;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(
+    to right,
+    pink 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%
+  );
+  z-index: 1;
+  position: relative;
+  justify-content: center;
+}
+
+.left-area {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+}
+.right-area {
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+  z-index: 2;
+}
+
+.current-score {
+  position: relative;
+  top: 50vh;
+}
+
+.center-elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  z-index: 3;
+  position: absolute;
+  align-items: center;
+  height: 100vh;
+}
+
+.inner-container {
+  margin: auto;
+  width: 80%;
+  height: 80%;
+  border: 5px solid purple;
+  border-radius: 20px;
+  background: rgb(163, 130, 130);
+}
+
+.instructions-area {
+  position: relative;
+  top: 50px;
+  left: 20px;
+}
+
+.instructions-area h1 {
+  font-size: 1rem;
+}
+
+.instructions-area ul li {
+  font-size: 0.5rem;
+}
+
+.bottom-area {
+  top: 40vh;
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
